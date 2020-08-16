@@ -17,7 +17,7 @@ class ServiceController extends Controller
     public function store(){
 
         $data = request()->validate([
-            'name' => 'required'
+            'name' => 'required|min:5'
         ]);
 
         $service = new \App\Service();

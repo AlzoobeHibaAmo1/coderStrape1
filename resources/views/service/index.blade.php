@@ -12,7 +12,7 @@
         <button>Add Services</button>
     </form>
 
-    @error('name') {{$message}} @enderror
+    <p style="color: red">@error('name') {{$message}} @enderror</p>
 
     <ul>
 
