@@ -17,11 +17,9 @@ Route::get('/', function () {
 
 Route::get('/hello', function () {
 
-    $variable = "Hello from routes";
+    $coolString = "Hello from routes";
 
 
-    return view('subviews.hello', [
-        'someData' => $variable,
-    ]);
+    return view('subviews.hello', compact('coolString'));
 });
 
