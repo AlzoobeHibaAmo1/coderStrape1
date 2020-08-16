@@ -19,10 +19,7 @@ class ServiceController extends Controller
         $data = request()->validate([
             'name' => 'required|min:5'
         ]);
-
-        $service = new \App\Service();
-        $service->name = request('name');
-        $service->save();
+        \App\Service::create($data);
 
         return redirect()->back();
     }
