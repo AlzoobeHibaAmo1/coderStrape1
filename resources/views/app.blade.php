@@ -8,7 +8,6 @@
     <title>@yield('title')</title>
 </head>
 <body>
-    <h1>Welcome to Laravel 6</h1>
-    <p>Additional text.</p>
+    @yield('content')
 </body>
 </html>

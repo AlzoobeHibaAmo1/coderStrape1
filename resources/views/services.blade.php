@@ -1,3 +1,3 @@
 @extends('app')
 
-@section('title', 'about us page')
+@section('title', 'Services')
