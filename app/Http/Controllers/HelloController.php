@@ -7,9 +7,7 @@ use Illuminate\Http\Request;
 class HelloController extends Controller
 {
     public function index(){
-        $coolString = "Hello from controller";
 
-
-        return view('subviews.hello', compact('coolString'));
+        return view('about');
     }
 }
