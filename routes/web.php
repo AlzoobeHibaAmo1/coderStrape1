@@ -16,6 +16,12 @@ Route::get('/', function () {
 });
 
 Route::get('/hello', function () {
-    return view('subviews.hello');
+
+    $variable = "Hello from routes";
+
+
+    return view('subviews.hello', [
+        'someData' => $variable,
+    ]);
 });
 
