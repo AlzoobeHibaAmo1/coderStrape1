@@ -30,9 +30,13 @@ class CustomerController extends Controller
 
     public function show( \App\Customer $customer){
 
-
-
         return view('customer.show', compact('customer'));
+
+    }
+
+    public function edit(\App\Customer $customer){
+
+        return view('customer.edit', compact('customer'));
 
     }
 }

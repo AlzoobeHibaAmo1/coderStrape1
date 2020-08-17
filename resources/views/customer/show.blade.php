@@ -7,3 +7,7 @@
 
     <strong>Email</strong>
     <p>{{ $customer->email }}</p>
+
+    <div>
+        <a href="/customers/{{$customer->id}}/edit">Edit</a>
+    </div>

@@ -25,6 +25,7 @@ Route::get('/customers/create', 'CustomerController@create');
 Route::post('/customers', 'CustomerController@store');
 
 Route::get('/customers/{customer}', 'CustomerController@show');
+Route::get('/customers/{customer}/edit', 'CustomerController@edit');
 
 
 //Route::view('/about', 'about');
