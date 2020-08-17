@@ -27,4 +27,12 @@ class CustomerController extends Controller
 
         return redirect('/customers');
     }
+
+    public function show($customerId){
+
+        $customer = \App\Customer::find($customerId);
+
+        return view('customer.show', compact('customer'));
+
+    }
 }
