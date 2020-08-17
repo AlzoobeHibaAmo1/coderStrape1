@@ -26,6 +26,7 @@ Route::post('/customers', 'CustomerController@store');
 
 Route::get('/customers/{customer}', 'CustomerController@show');
 Route::get('/customers/{customer}/edit', 'CustomerController@edit');
+Route::patch('/customers/{customer}', 'CustomerController@update');
 
 
 //Route::view('/about', 'about');

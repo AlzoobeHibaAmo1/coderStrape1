@@ -1,6 +1,8 @@
 <h1>Edit customer Details</h1>
 
-    <form action="#" method="post">
+    <form action="/customers/{{ $customer->id }}" method="post">
+
+        @method('PATCH')
 
         <div>
             <label for="name">Name</label>
