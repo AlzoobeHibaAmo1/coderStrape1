@@ -11,9 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Mail\WelcomeMail;
+use Illuminate\Support\Facades\Mail;
+
+//Route::get('/email', function () {
+  //  Mail::to('email@email.com')->send(new WelcomeMail());
+    //return new WelcomeMail();
+//});
 
 Route::get('/about', 'HelloController@about');
 
